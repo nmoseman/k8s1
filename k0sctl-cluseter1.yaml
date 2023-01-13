@@ -1,0 +1,21 @@
+apiVersion: k0sctl.k0sproject.io/v1beta1
+kind: Cluster
+metadata:
+  name: k0s-cluster
+spec:
+  hosts:
+  - ssh:
+      address: k-prime.home.slow.moda
+      user: root
+      port: 22
+      keyPath: null
+    role: controller
+  - ssh:
+      address: k1.home.slow.moda
+      user: root
+      port: 22
+      keyPath: null
+    role: worker
+  k0s:
+    version: 1.25.4+k0s.0
+    dynamicConfig: false
