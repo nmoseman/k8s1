@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: c1-metallb
+  name: cluster1-metallb
   namespace: argocd
 spec:
   destination:

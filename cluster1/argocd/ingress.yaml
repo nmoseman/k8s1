@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster1-nginx-ingress
+  namespace: argocd
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ingress-nginx
+  project: default
+  source:
+    chart: ingress-nginx
+    repoURL: https://kubernetes.github.io/ingress-nginx
+    targetRevision: "*"
+    helm:
+      releaseName: cluster1
+      values: |-
+        controller:
+          extraArgs:
+            default-ssl-certificate: "ingress-nginx/wildcard-tls"
+          ingressClassResource:
+            default: true
+        nginx.ingress.kubernetes.io/proxy-body-size: 10000m
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      prune: true
+      selfHeal: true
