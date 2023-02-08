@@ -5,3 +5,4 @@ resources:
 - ./metallb.yaml
 - ./ingress.yaml
 - ./cert-manager.yaml
+- ./wildcard-cert.yaml
