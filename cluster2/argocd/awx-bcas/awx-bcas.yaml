@@ -6,5 +6,6 @@ metadata:
 spec:
   admin_password_secret: awx-bcas-admin-pw
   service_type: ClusterIP
-  ingress_type: nginx
+  ingress_type: Ingress
+  ingress_class_name: nginx
   hostname: awx.2.bluddclot.com
