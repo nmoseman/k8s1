@@ -3,6 +3,6 @@ kind: Kustomization
 
 resources:
 - ./metallb.yaml
-- ./ingress.yaml
 - ./cert-manager.yaml
+# - ./ingress.yaml
 - ./wildcard-cert.yaml
