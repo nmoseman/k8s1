@@ -4,5 +4,5 @@ kind: Kustomization
 resources:
 - ./metallb.yaml
 - ./cert-manager.yaml
-# - ./ingress.yaml
+- ./ingress.yaml
 - ./wildcard-cert.yaml
