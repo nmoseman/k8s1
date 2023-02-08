@@ -5,17 +5,17 @@ metadata:
 spec:
   hosts:
   - ssh:
-      address: k-prime.home.slow.moda
-      user: root
+      address: k0s1.two.bluddclot.com
+      user: debian
       port: 22
       keyPath: null
     role: controller
   - ssh:
-      address: k1.home.slow.moda
-      user: root
+      address: kworker1.two.bluddclot.com
+      user: debian
       port: 22
       keyPath: null
     role: worker
   k0s:
-    version: 1.25.4+k0s.0
+    version: 1.26.0+k0s.0
     dynamicConfig: false
