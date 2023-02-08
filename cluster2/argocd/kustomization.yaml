@@ -6,4 +6,4 @@ resources:
 - ./cert-manager.yaml
 - ./ingress.yaml
 - ./wildcard-cert.yaml
-- ./awx.yaml
+- ./awx-operator.yaml
