@@ -10,7 +10,6 @@ spec:
       name: letsencrypt-bluddclot2-account-key
     server: https://acme-v02.api.letsencrypt.org/directory
     solvers:
-    solvers:
     - dns01:
         digitalocean:
           tokenSecretRef:
