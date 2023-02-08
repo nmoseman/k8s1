@@ -7,3 +7,4 @@ resources:
 - ./ingress.yaml
 - ./wildcard-cert.yaml
 - ./awx-operator.yaml
+- ./awx-bcas.yaml
