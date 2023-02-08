@@ -8,13 +8,16 @@ spec:
       address: k0s1.two.bluddclot.com
       user: debian
       port: 22
-      keyPath: null
     role: controller
   - ssh:
       address: kworker1.two.bluddclot.com
       user: debian
       port: 22
-      keyPath: null
+    role: worker
+  - ssh:
+      address: kworker2.two.bluddclot.com
+      user: debian
+      port: 22
     role: worker
   k0s:
     version: 1.26.0+k0s.0
