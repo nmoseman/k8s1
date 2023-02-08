@@ -1,0 +1,10 @@
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx-bcas
+spec:
+  admin_password_secret: awx-bcas-admin-pw
+  service_type: ClusterIP
+  ingress_type: nginx
+  hostname: awx.2.bluddclot.com
