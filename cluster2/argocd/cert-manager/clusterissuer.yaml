@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-slowmoda
+spec:
+  acme:
+    email: linlamer@gmail.com
+    preferredChain: ""
+    privateKeySecretRef:
+      name: letsencrypt-bluddclot2-account-key
+    server: https://acme-v02.api.letsencrypt.org/directory
+    solvers:
+    solvers:
+    - dns01:
+        digitalocean:
+          tokenSecretRef:
+            name: digitalocean-dns
+            key: access-token
