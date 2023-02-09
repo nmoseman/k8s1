@@ -17,6 +17,8 @@ spec:
       values: |-
         kubeletDir: /var/lib/k0s/kubelet
   syncPolicy:
+    syncOptions:
+    - Replace=true
     automated:
       prune: true
       selfHeal: true
