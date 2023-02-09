@@ -8,3 +8,4 @@ resources:
 - ./wildcard-cert.yaml
 - ./awx-operator.yaml
 - ./awx-bcas.yaml
+- ./nfs-csi.yaml
