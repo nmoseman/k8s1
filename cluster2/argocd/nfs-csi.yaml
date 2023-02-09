@@ -14,8 +14,8 @@ spec:
     targetRevision: "4.1.0"
     helm:
       releaseName: csi-driver-nfs
-    values: |-
-      kubeletDir: /var/lib/k0s/kubelet
+      values: |-
+        kubeletDir: /var/lib/k0s/kubelet
   syncPolicy:
     automated:
       prune: true
