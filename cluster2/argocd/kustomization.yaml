@@ -9,3 +9,4 @@ resources:
 - ./awx-operator.yaml
 - ./awx-bcas.yaml
 - ./nfs-csi.yaml
+- ./nfs-storageclass.yaml
