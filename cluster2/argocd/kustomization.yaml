@@ -10,3 +10,4 @@ resources:
 - ./awx-bcas.yaml
 - ./nfs-csi.yaml
 - ./nfs-storageclass.yaml
+- ./argo-ingress.yaml
